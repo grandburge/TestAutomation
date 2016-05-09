@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="226" started-at="2016-05-09T05:57:08Z" finished-at="2016-05-09T05:57:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="226" started-at="2016-05-09T05:57:08Z" finished-at="2016-05-09T05:57:08Z">
+      <class name="com.test.util.ParseXml">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.test.util.ParseXml@1794d431]" name="test" duration-ms="211" started-at="2016-05-09T13:57:08Z" finished-at="2016-05-09T13:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.test.util.ParseXml -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
