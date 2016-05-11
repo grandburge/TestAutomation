@@ -4,3 +4,6 @@ Input:
 Link:
   type: xpath
   value: ".//*[@id='link']/a"
+Droplist
+  type: id
+  value: dsf
