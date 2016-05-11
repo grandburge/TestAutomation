@@ -1,0 +1,6 @@
+Input:
+  type: id
+  value: user
+Link:
+  type: xpath
+  value: ".//*[@id='link']/a"

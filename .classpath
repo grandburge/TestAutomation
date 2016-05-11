@@ -86,5 +86,7 @@
 	<classpathentry kind="lib" path="D:/tool/Selenium/testng-6.8.5.jar"/>
 	<classpathentry kind="lib" path="D:/tool/Selenium/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="D:/tool/Selenium/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/tool/Selenium/snakeyaml-1.17.jar"/>
+	<classpathentry kind="lib" path="D:/tool/Selenium/jyaml-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

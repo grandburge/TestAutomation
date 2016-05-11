@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="226" started-at="2016-05-09T05:57:08Z" finished-at="2016-05-09T05:57:08Z">
+  <suite name="Default suite" duration-ms="12233" started-at="2016-05-10T08:52:43Z" finished-at="2016-05-10T08:52:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="226" started-at="2016-05-09T05:57:08Z" finished-at="2016-05-09T05:57:08Z">
-      <class name="com.test.util.ParseXml">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.test.util.ParseXml@1794d431]" name="test" duration-ms="211" started-at="2016-05-09T13:57:08Z" finished-at="2016-05-09T13:57:08Z">
+    <test name="Default test" duration-ms="12233" started-at="2016-05-10T08:52:43Z" finished-at="2016-05-10T08:52:55Z">
+      <class name="com.test.util.Locator">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.test.util.Locator@53b32d7]" name="test" duration-ms="12214" started-at="2016-05-10T16:52:43Z" finished-at="2016-05-10T16:52:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- com.test.util.ParseXml -->
+      </class> <!-- com.test.util.Locator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

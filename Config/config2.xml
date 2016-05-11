@@ -12,8 +12,8 @@
 		</layer2>
 	</test1>
 	<test1>
-		<browser>chrome4</browser>
-		<waitTime>60</waitTime>
+		<browser>chrome5</browser>
+		<waitTime>600</waitTime>
 		<layer2>
 			<browser>chrome4</browser>
 		</layer2>

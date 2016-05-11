@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.util.ParseXml">
+      <class name="com.test.util.Locator">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- com.test.util.ParseXml -->
+      </class> <!-- com.test.util.Locator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
