@@ -65,29 +65,38 @@ public class ParseXml {
 	@SuppressWarnings("unchecked")
 	public Map<String,String> getChildrenInfoByElement(Element element)
 	{
-		Map<String,String> map = new HashMap<String,String>();
-		List<Element> children = element.elements();
-		for (Element e : children)
+		if(element!=null)
 		{
-			map.put(e.getName(), e.getText());
+			Map<String,String> map = new HashMap<String,String>();
+			List<Element> children = element.elements();
+			for (Element e : children)
+			{
+				map.put(e.getName(), e.getText());
+			}
+			return map;
+		}else{
+			return null;
 		}
-		return map;		
+		
+				
 	}
 	
 	@Test
 	public void test(){
 		this.load("Config/config2.xml");
-		List<Element> elements = this.getElementObjects("//test1");
+//		List<Element> elements = this.getElementObjects("//test1");
+		List<Element> elements = this.getElementObjects("//sdfsdf");
 		Map<String,String> map;
-		for (Element e : elements)
-		{
-			map = this.getChildrenInfoByElement(e);
-			for (String key : map.keySet())
-			{
-				System.out.println(key+":"+map.get(key));				
-			}
-			System.out.println("+++++++++++++");
-		}
+		map = this.getChildrenInfoByElement(null);
+//		for (Element e : elements)
+//		{
+//			map = this.getChildrenInfoByElement(e);
+//			for (String key : map.keySet())
+//			{
+//				System.out.println(key+":"+map.get(key));				
+//			}
+//			System.out.println("+++++++++++++");
+//		}
 		
 //		Object[][] object = new Object[elements.size()][];
 //		for(int i=0;i<elements.size();i++)

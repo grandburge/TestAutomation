@@ -16,6 +16,7 @@ public class ParseProperties {
 		try {
 			FileInputStream fis = new FileInputStream(configPath);
 			prop.load(fis);
+			fis.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

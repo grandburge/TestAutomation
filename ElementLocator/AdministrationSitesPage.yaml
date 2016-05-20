@@ -1,0 +1,46 @@
+# The add/edit button on the up-left field of Site
+AddSiteBtn:
+  type: xpath
+  value: "//table[contains(@class,'vpm-add-btn-withFilter')]"
+EditSiteBtn:
+  type: xpath
+  value: "//table[contains(@class,'vpm-edit-btn')]"
+# -----------------Add/Edit Site----------------
+# SiteProperties Tab
+SitePropertiesTab:
+  type: xpath
+  value: "//span[text()='Site Properties']"
+SiteNameInput:
+  type: xpath
+  value: "//input[@name='siteName']"
+# WAN Speed Tab
+WANSpeedTab:
+  type: xpath
+  value: "//span[text()='WAN Speed']"
+NetworkInterfaceTab:
+  type: xpath
+  value: "//span[text()='Network Interfaces']"
+# SubNet Tab
+SubNetTab:
+  type: xpath
+  value: "//span[text()='Subnets']"
+AddSubnetBtn:
+  type: xpath
+  value: "//table[contains(@class,'vpm-add-btn ')]//button"
+IPAddressInput:
+  type: xpath
+  value: "//input[@name='address']"  
+SubnetMaskInput:
+  type: xpath
+  value: "//input[@name='mask']"  
+SaveSubnetBtn:
+  type: xpath
+  value: "//span[text()='Add Subnet']/preceding-sibling::div[contains(@class,'x-tool-save')][2]"
+# Tags Tab
+TagsTab:
+  type: xpath
+  value: "//span[@class='x-tab-strip-inner']/span[text()='Tags']"
+# Save/SiteNew button
+SaveSiteBtn:
+  type: xpath
+  value: "//span[text()='Add Site']/preceding-sibling::div[contains(@class,'x-tool-save')][2]"

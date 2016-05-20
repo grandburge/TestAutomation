@@ -1,0 +1,15 @@
+AdministrationLogo:
+  type: xpath
+  value: "//span[text()='Administration']"
+AnalysisNavigation:
+  type: xpath
+  value: "//a[@class='x-tree-node-anchor']/span[text()='Analysis']"
+SitesNavigation:
+  type: xpath
+  value: "//a[@class='x-tree-node-anchor']/span[text()='Sites']"
+AdvancedNavigation:
+  type: xpath
+  value: "//a[@class='x-tree-node-anchor']/span[text()='Advanced']"
+TagsNavigation:
+  type: xpath
+  value: "//a[@class='x-tree-node-anchor']/span[text()='Tags']"

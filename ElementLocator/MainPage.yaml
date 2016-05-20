@@ -1,0 +1,9 @@
+logo:
+  type: className
+  value: vpm-truview-logo
+AdministrationIcon:
+  type: className
+  value: admin_icon
+PerformanceIcon:
+  type: className
+  value: perf_icon

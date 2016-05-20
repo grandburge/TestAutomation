@@ -81,7 +81,7 @@ public class Locator {
 		return element;
 	}
 	
-	private boolean waitElementToBeDisplayed(final WebElement element)
+	public boolean waitElementToBeDisplayed(final WebElement element)
 	{
 		boolean displayFlag = false;
 		if(element == null)
@@ -112,7 +112,7 @@ public class Locator {
 	}
 	
 	
-	public WebElement getLocator(String key,String[] replace,boolean wait)
+	private WebElement getLocator(String key,String[] replace,boolean wait)
 	{
 		String type = null;
 		String value = null;
@@ -142,7 +142,9 @@ public class Locator {
 			element = this.waitForElement(by);
 			if(this.waitElementToBeDisplayed(element))
 			{
-				return element;
+//				return element;
+//Sometimes refreshing page may cause that the element is lost, so run waitForElement again to get the element
+				return this.waitForElement(by);
 			}
 			else
 			{
