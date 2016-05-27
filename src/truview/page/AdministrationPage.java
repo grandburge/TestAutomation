@@ -34,4 +34,13 @@ public class AdministrationPage extends BasePage{
 		this.getElement("SitesNavigation").click();;
 		return new AdministrationSitesPage(this.getDriver());
 	}
+	
+	public AdministrationTagsPage switchToTags()
+	{
+//		if(!this.isElementDisplayed("TagsNavigation"))
+//			this.getElement("AdvancedNavigation").click();
+		this.getElement("AdvancedNavigation").click();
+		this.getElement("TagsNavigation").click();
+		return new AdministrationTagsPage(this.getDriver());
+	}
 }

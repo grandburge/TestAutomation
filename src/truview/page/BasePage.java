@@ -176,7 +176,7 @@ public class BasePage {
 		
 		if(by==null)
 		{
-			Assert.fail("The element doesn't not exist in the configuration file");
+			Assert.fail("The element "+key+" doesn't not exist in the configuration file");
 		}
 
 		if(wait == true)
@@ -190,7 +190,8 @@ public class BasePage {
 			}
 			else
 			{
-				return null;
+//waitElementToBeDisplayed(element) doesn't work well sometimes,so bypass it.
+				return this.waitForElement(by);
 			}
 		}
 		else
