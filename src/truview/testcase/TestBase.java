@@ -1,6 +1,5 @@
-package com.test.util;
+package truview.testcase;
 
-import org.testng.annotations.Test;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.Iterator;
@@ -8,11 +7,24 @@ import java.util.List;
 import java.util.Map;
 
 import org.dom4j.Element;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+
+import truview.config.Config;
+import truview.config.SeleniumDriver;
+
+import com.test.util.Global;
+import com.test.util.ParseXml;
+import com.test.util.ScreenShot;
 
 public class TestBase {
 	private ParseXml testDateParser;
 	private Map<String,String> commonData;
+	protected WebDriver driver;
+	protected String url;
+	protected ScreenShot screenShot;
 	private void initialParser()
 	{
 		if(testDateParser==null)
@@ -69,6 +81,33 @@ public class TestBase {
 		return map1;
 	}
 	
-
+	@BeforeClass
+	public void setup()
+	{
+		SeleniumDriver seleniumDriver = new SeleniumDriver();
+		driver = seleniumDriver.getDriver();
+		url = Config.url;
+		screenShot = new ScreenShot(driver);
+	}
+	
+	@AfterClass
+	public void teardown()
+	{
+		if(driver != null)
+		{
+			driver.close();
+			driver.quit();
+		}
+	}
+	
+	public void wait(int millisec)
+	{
+		try {
+			Thread.sleep(millisec);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }

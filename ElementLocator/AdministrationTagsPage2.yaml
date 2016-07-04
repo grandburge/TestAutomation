@@ -1,0 +1,31 @@
+# The add/edit button on the up-left field of Site
+AddTagBtn:
+  type: xpath
+  value: "//table[contains(@class,'vpm-add-btn')]//button/../.."
+TagNameInput:
+  type: xpath
+  value: "//input[@id='tagnameinputfield']"
+DescriptionInput:
+  type: xpath
+  value: "//input[@name='description']"
+EntityTypeDiv:
+  type: xpath
+  value: "//div[@id='x-form-el-tagEntityType']"
+EntityTypeInput:
+  type: xpath
+  value: "//input[@id='tagEntityType']"
+EntityTypeSelect:
+  type: xpath
+  value: "//input[@name='entityType']/following-sibling::img"
+EntityTypeOptionSites:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Sites']"
+EntityTypeOptionServers:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Servers']"
+EntityTypeOptionApplications:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Applications']"
+AssignmentMethodManualDiv
+  type: xpath
+  value: "//div[@id='tagAssignmentMethodField']/div[1]/div[1]/div[1]"

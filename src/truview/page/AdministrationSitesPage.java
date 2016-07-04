@@ -18,6 +18,7 @@ public class AdministrationSitesPage extends AdministrationPage {
 		super(driver,elementLocatorPath,elementLocatorFile);	
 	}
 	
+	// addSite("autosite1","1.1.1.1/32 1.1.1.2/32")
 	public void addSite(String siteName,String subnet)
 	{
 		String ipAddress;
@@ -29,6 +30,7 @@ public class AdministrationSitesPage extends AdministrationPage {
 		this.getElement("SiteNameInput").sendKeys(siteName);
 		
 		this.getElement("SubNetTab").click();
+		this.wait(500);
 		String[] subnetList = subnet.split(" ");		
 		for(String ipMask : subnetList)
 		{	String[] ipMaskPair = ipMask.split("/");
@@ -42,5 +44,6 @@ public class AdministrationSitesPage extends AdministrationPage {
 
 		
 		this.getElement("SaveSiteBtn").click();
+		this.wait(1000);
 	}
 }

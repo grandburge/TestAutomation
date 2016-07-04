@@ -1,0 +1,12 @@
+UsernameInput:
+  type: id
+  value: loginname
+PasswordInput:
+  type: id
+  value: nloginpwd
+LoginSubmit:
+  type: id
+  value: loginsubmit 
+ErrorMessge:
+  type: className
+  value: msg-error  

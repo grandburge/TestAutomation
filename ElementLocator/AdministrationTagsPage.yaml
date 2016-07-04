@@ -1,0 +1,76 @@
+# The add/edit button on the up-left field of Site
+AddTagBtn:
+  type: xpath
+  value: "//table[contains(@class,'vpm-add-btn')]//button/../.."
+TagNameInput:
+  type: xpath
+  value: "//input[@id='tagnameinputfield']"
+DescriptionInput:
+  type: xpath
+  value: "//input[@name='description']"
+EntityTypeDiv:
+  type: xpath
+  value: "//div[@id='x-form-el-tagEntityType']"
+EntityTypeInput:
+  type: xpath
+  value: "//input[@id='tagEntityType']"
+EntityTypeSelect:
+  type: xpath
+  value: "//input[@name='entityType']/following-sibling::img"
+EntityTypeOptionSites:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Sites']"
+EntityTypeOptionServers:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Servers']"
+EntityTypeOptionApplications:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='Applications']"
+AssignmentMethodManualDiv:
+  type: xpath
+  value: "//div[@id='tagAssignmentMethodField']/div[1]/div[1]/div[1]"
+AssignmentMethodRuleDiv:
+  type: xpath
+  value: "//div[@id='tagAssignmentMethodField']/div[1]/div[2]/div[1]//input[@value='Rule']"
+TagValueInput:
+  type: xpath
+  value: "//input[@name='tagValueField']"
+TagValueAddIcon:
+  type: xpath
+  value: "//input[@name='tagValueField']/following-sibling::table[contains(@class,'x-btn-icon')]//button[contains(@class,'vpm-admin-grid-addbutton')]/../.."
+FilterTypeAllDiv:
+  type: xpath
+  value: "//input[@id='filterTypeAll']/.."
+FilterTypeAnyDiv:
+  type: xpath
+  value: "//input[@id='filterTypeOr']/.."
+FilterTypeInput:
+  type: xpath
+  value: "//input[@name='filterOperator']"
+AddExpressionFilterBtn:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-tbar')]//tbody[contains(@class,'x-btn-icon-small-left')]//button"
+FieldNameInput:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]//input[@id='tagpropertycombo']"
+FieldNameDiv:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]//input[@id='tagpropertycombo']/../img"
+FieldNameOptionList:
+  type: xpath
+  value: "//div[@class='x-combo-list-inner']/div[text()='%s']"
+OperatorDiv:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]/div[contains(@class,'x-grid3-body')]/div[1]/table[1]/tbody[1]//div[contains(@class,'x-grid3-col-3')]"
+ValueDiv:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]/div[contains(@class,'x-grid3-body')]/div[1]/table[1]/tbody[1]//div[contains(@class,'x-grid3-col-4')]"
+OperatorInput:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]/div[last()]//input[1]"
+ValueInput:
+  type: xpath
+  value: "//*[@id='tagexpressiongrid']/div[contains(@class,'x-panel-bwrap')]/div[contains(@class,'x-panel-body')]//div[contains(@class,'x-grid3-scroller')]/div[last()]//input[1]"
+SaveTagBtn:
+  type: xpath
+  value: "//span[text()='Add Tag']/preceding-sibling::div[1]"

@@ -1,10 +1,13 @@
-package com.test.util;
+package truview.testcase;
 
 import java.util.Map;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
+
+import truview.config.SeleniumDriver;
+import truview.page.Locator;
 
 
 public class DemoTest extends TestBase {

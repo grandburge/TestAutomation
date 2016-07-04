@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<testLogin>
+		<username>user1</username>
+		<password>pwd1</password>
+		<warnmsg>账户名与密码匹配</warnmsg>
+	</testLogin>
+	<testLogin>
+		<username>user2</username>
+		<password>pwd2</password>
+		<warnmsg>账户名与密码不匹配</warnmsg>
+	</testLogin>
+</data>

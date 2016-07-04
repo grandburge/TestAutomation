@@ -5,15 +5,19 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
+
 import org.testng.Assert;
 import org.ho.yaml.Yaml;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.test.util.Config;
+import com.test.util.Log;
+
+import truview.config.Config;
 
 public class BasePage {
 	private WebDriver driver;
@@ -93,7 +97,9 @@ public class BasePage {
 			String type = this.locatorMap.get(key).get("type");
 			String value = this.locatorMap.get(key).get("value");
 			if(replace!=null)
+			{
 				value = this.getLocatorString(value, replace);
+			}	
 			return this.getBy(type, value);
 		}else
 		{
@@ -140,11 +146,12 @@ public class BasePage {
 	
 	private String getLocatorString(String value,String[] ss)
 	{
+		String replaceValue=null;
 		for(String s:ss)
 		{
-			value.replaceFirst("%s", s);
+			replaceValue = value.replaceFirst("%s", s);
 		}
-		return value;
+		return replaceValue;
 	}
 	
 	
@@ -246,7 +253,43 @@ public class BasePage {
 	{
 		return this.driver;
 	}
-
+	
+	public void wait(int millisec)
+	{
+		try {
+			Thread.sleep(millisec);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public boolean switchWindowByTitle(String title)
+	{
+		boolean flag = false;
+		try
+		{
+			String currentHandle = driver.getWindowHandle();
+			for(String handle : driver.getWindowHandles())
+			{
+				driver.switchTo().window(handle);
+				if(driver.getTitle().contains(title))
+				{
+					flag = true;
+					break;
+				}
+			}
+			if (flag == false)
+			{
+				driver.switchTo().window(currentHandle);
+			}
+		}catch(NoSuchWindowException e){
+			flag = false;
+			Log.logWarn("Fail to swich to window "+title);
+			e.printStackTrace();
+		}
+		return flag;
+	}
 
 }
 

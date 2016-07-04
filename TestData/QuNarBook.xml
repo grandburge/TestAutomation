@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<testBookTicket>
+		<fromcity>北京(BJS)</fromcity>
+		<tocity>上海(SHA)</tocity>
+		<flydate>2016-06-29</flydate>
+	</testBookTicket>
+</data>

@@ -2,4 +2,5 @@
 <config>
 	<browser>firefox</browser>
 	<waitTime>10</waitTime>
+	<url>http://www.jd.com/</url>
 </config>

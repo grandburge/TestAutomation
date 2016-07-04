@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[2016-05-31 17:10:25:Fail to search ticket]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12233" started-at="2016-05-10T08:52:43Z" finished-at="2016-05-10T08:52:55Z">
+  <suite name="Default suite" duration-ms="42405" started-at="2016-05-31T09:09:53Z" finished-at="2016-05-31T09:10:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12233" started-at="2016-05-10T08:52:43Z" finished-at="2016-05-10T08:52:55Z">
-      <class name="com.test.util.Locator">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.test.util.Locator@53b32d7]" name="test" duration-ms="12214" started-at="2016-05-10T16:52:43Z" finished-at="2016-05-10T16:52:55Z">
+    <test name="Default test" duration-ms="42405" started-at="2016-05-31T09:09:53Z" finished-at="2016-05-31T09:10:36Z">
+      <class name="truview.testcase.QuNarBook">
+        <test-method status="PASS" signature="setup()[pri:0, instance:truview.testcase.QuNarBook@3c0ecd4b]" name="setup" is-config="true" duration-ms="6706" started-at="2016-05-31T17:09:53Z" finished-at="2016-05-31T17:10:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.test.util.Locator -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testBookTicket(java.util.Map)[pri:0, instance:truview.testcase.QuNarBook@3c0ecd4b]" name="testBookTicket" duration-ms="25107" started-at="2016-05-31T17:10:00Z" data-provider="providerMethod" finished-at="2016-05-31T17:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fromcity=北京(BJS), tocity=上海(SHA), flydate=2016-06-29, url=http://www.jd.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-05-31 17:10:25:Fail to search ticket]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testBookTicket -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:truview.testcase.QuNarBook@3c0ecd4b]" name="teardown" is-config="true" duration-ms="10517" started-at="2016-05-31T17:10:25Z" finished-at="2016-05-31T17:10:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- truview.testcase.QuNarBook -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

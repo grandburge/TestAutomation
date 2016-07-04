@@ -1,11 +1,14 @@
-package com.test.util;
+package truview.config;
 
 import org.testng.annotations.Test;
+
+import com.test.util.ParseXml;
 
 public class Config {
 	private static String configPath;
 	public static String browser;
 	public static int waitTime;
+	public static String url;
 	
 	static
 	{		
@@ -14,7 +17,7 @@ public class Config {
 		XmlCfg.load(configPath);
 		browser = XmlCfg.getElementText("/*/browser");
 		waitTime = Integer.valueOf(XmlCfg.getElementText("/*/waitTime"));
-		
+		url = XmlCfg.getElementText("/*/url");
 	}
 	
 	public void setCfgPath(String configPath)

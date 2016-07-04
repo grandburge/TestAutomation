@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<testInput>
+		<inputValue>test1</inputValue>
+	</testInput>
+	<testInput>
+		<inputValue>test2</inputValue>
+	</testInput>
+</data>

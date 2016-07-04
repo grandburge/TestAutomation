@@ -1,4 +1,4 @@
-package com.test.util;
+package truview.testcase;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.Map;
 
 import org.dom4j.Element;
 import org.testng.annotations.DataProvider;
+
+import com.test.util.ConnectPGSQL;
 
 public class TestBasePGSQL {
 	@DataProvider

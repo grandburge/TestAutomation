@@ -3,6 +3,9 @@ package com.test.util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import truview.config.SeleniumDriver;
+import truview.page.Locator;
+
 public class Test {
 
 	public static void main(String[] args) {

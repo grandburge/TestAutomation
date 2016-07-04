@@ -1,6 +1,7 @@
-package com.test.util;
+package truview.testcase;
 
 import java.util.Map;
+
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {

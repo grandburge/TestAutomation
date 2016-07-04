@@ -29,8 +29,9 @@ public class AdministrationPage extends BasePage{
 	
 	public AdministrationSitesPage switchToSites()
 	{
-		if(!this.isElementDisplayed("SitesNavigation"))
-			this.getElement("AnalysisNavigation");
+//		if(!this.isElementDisplayed("SitesNavigation"))
+//			this.getElement("AnalysisNavigation").click();
+		this.getElement("AnalysisNavigation").click();
 		this.getElement("SitesNavigation").click();;
 		return new AdministrationSitesPage(this.getDriver());
 	}

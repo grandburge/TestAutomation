@@ -1,0 +1,18 @@
+fromCity:
+  type: xpath
+  value: "//input[@name='fromCity']"
+toCity:
+  type: xpath
+  value: "//input[@name='toCity']"
+datebox:
+  type: xpath
+  value: "//input[@id='fromDate']"
+date:
+  type: xpath
+  value: "//div[@class='t-d']/span[text()='19']"
+searchButton:
+  type: xpath
+  value: "//button[@class='btn_search' and @type='submit']"
+bookicon:
+  type: xpath
+  value: "//*[text()='∫Ω∞‡–≈œ¢']"
